@@ -1,5 +1,6 @@
 "use client"
 
+import TwitterFeed from "@/components/TwitterFeed"
 import { motion } from "framer-motion"
 import { Instagram, Twitter } from "lucide-react"
 import Image from "next/image"
@@ -55,6 +56,8 @@ export default function Home() {
           Começar Chat
         </Link>
       </motion.div>
+
+      <TwitterFeed />
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
