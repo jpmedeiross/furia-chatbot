@@ -27,7 +27,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className="text-4xl sm:text-5xl font-extrabold tracking-tight"
+        className="font-bebas text-4xl sm:text-5xl font-semibold "
       >
         Bem-vindo ao FURIA Chatbot
       </motion.h1>
@@ -36,7 +36,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.8 }}
-        className="text-lg text-gray-400 max-w-xl mt-4"
+        className="font-inter text-lg text-gray-400 max-w-xl mt-4"
       >
         Converse com o bot oficial da FURIA, receba notícias, saiba
         curiosidades, informações do time de CS e muito mais.
@@ -50,7 +50,7 @@ export default function Home() {
       >
         <Link
           href="/chat"
-          className="bg-blue-950 hover:bg-blue-800 text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+          className="font-inter bg-blue-950 hover:bg-blue-800 text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
         >
           Começar Chat
         </Link>
@@ -63,7 +63,7 @@ export default function Home() {
         className="mt-8"
       >
         <footer className="mt-16 flex flex-col items-center gap-4 text-gray-400 text-sm">
-          <p className="text-xs sm:text-sm">Siga a FURIA</p>
+          <p className="font-inter text-xs sm:text-sm">Siga a FURIA</p>
           <div className="flex gap-6">
             <a
               href="https://twitter.com/furia"
