@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function ChatPage() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center px-6 py-8">
+    <main className="min-h-screen flex flex-col items-center px-6 py-8">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function ChatPage() {
       >
         <Link
           href="/"
-          className="flex items-center gap-2 text-fuchsia-500 hover:underline mb-6"
+          className="flex items-center gap-2  hover:underline mb-6"
         >
           <ArrowLeft className="w-5 h-5" />
           Voltar para Home
@@ -26,7 +26,7 @@ export default function ChatPage() {
           Chat Oficial da FURIA
         </h1>
 
-        <p className="text-gray-950 mb-8">
+        <p className="mb-8">
           Manda sua pergunta e troque ideia com a comunidade FURIA.
         </p>
 
