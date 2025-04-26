@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { Tweet } from "react-tweet"
-//TODO: centralizar tweet
+
 export default function TwitterFeed() {
   return (
     <motion.div
@@ -13,7 +13,7 @@ export default function TwitterFeed() {
       <h2 className="font-bebas text-2xl text-white mb-4 self-center">
         Último Post da FURIA
       </h2>
-      <div className="w-full max-w-2xl space-y-4 justify-center">
+      <div className="max-w-2xl space-y-4 justify-center">
         <Tweet id="1914726018440458417" />
       </div>
     </motion.div>
