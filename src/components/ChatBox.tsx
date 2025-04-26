@@ -37,7 +37,7 @@ export default function ChatBox() {
 
   return (
     <div className="w-full max-w-md">
-      <div className="bg-white text-black p-4 rounded-md mb-4 h-80 overflow-y-auto shadow-inner space-y-2">
+      <div className=" text-white">
         {messages.map((msg, i) => (
           <div
             key={i}
@@ -82,7 +82,7 @@ export default function ChatBox() {
         />
         <button
           onClick={sendMessage}
-          className="bg-fuchsia-600 text-white p-3 hover:bg-fuchsia-700"
+          className="text-white p-3 hover:bg-amber-900"
         >
           <SendHorizonal className="w-5 h-5" />
         </button>
