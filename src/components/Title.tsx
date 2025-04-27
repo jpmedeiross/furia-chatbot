@@ -9,7 +9,7 @@ export default function Title() {
       transition={{ delay: 0.2, duration: 0.8 }}
       className="font-bebas text-4xl sm:text-5xl font-semibold text-white"
     >
-      Bem-vindo ao FURIA Chatbot
+      Bem-vindo ao Chatbot Oficial da FURIA
     </motion.h1>
   )
 }

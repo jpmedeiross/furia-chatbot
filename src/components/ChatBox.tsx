@@ -82,7 +82,7 @@ export default function ChatBox() {
         />
         <button
           onClick={sendMessage}
-          className="text-white p-3 hover:bg-amber-900"
+          className="text-white p-3 hover:bg-gray-900 bg-gray-800"
         >
           <SendHorizonal className="w-5 h-5" />
         </button>
