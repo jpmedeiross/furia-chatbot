@@ -2,7 +2,10 @@ import "./globals.css"
 
 export const metadata = {
   title: "FURIA Chatbot",
-  description: "Converse com o bot oficial da FURIA Esports"
+  description: "Converse com o bot oficial da FURIA Esports",
+  icons: {
+    icon: "/Furia_Esports_logo.png"
+  }
 }
 
 export default function RootLayout({
