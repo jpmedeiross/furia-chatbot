@@ -50,12 +50,24 @@ export default function ChatBox() {
             }`}
           >
             <div
-              className={`flex items-end gap-2 max-w-[75%] ${
+              className={`flex items-start gap-2 max-w-[75%] ${
                 msg.sender === "user" ? "flex-row-reverse" : ""
               }`}
             >
-              <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-sm font-bold">
-                {msg.sender === "user" ? "👤" : "🐆"}
+              <div className="flex-shrink-0 w-8 h-8 rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
+                {msg.sender === "user" ? (
+                  <img
+                    src="/user.png"
+                    alt="User"
+                    className="object-cover w-full h-full"
+                  />
+                ) : (
+                  <img
+                    src="/Furia_Esports_logo.png"
+                    alt="FURIA"
+                    className="object-cover w-full h-full"
+                  />
+                )}
               </div>
 
               <div
