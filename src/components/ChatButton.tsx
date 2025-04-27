@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
+import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 
 export default function ChatButton() {
@@ -12,9 +13,10 @@ export default function ChatButton() {
     >
       <Link
         href="/chat"
-        className="font-inter bg-blue-950 hover:bg-blue-800 text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 animate-pulse hover:animate-none"
+        className="font-inter flex items-center gap-1 bg-blue-950 hover:bg-blue-800 text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 animate-pulse hover:animate-none"
       >
         Começar Chat
+        <ArrowUpRight />
       </Link>
     </motion.div>
   )
