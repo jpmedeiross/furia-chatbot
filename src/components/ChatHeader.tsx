@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ArrowLeft } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function ChatHeader() {
@@ -21,12 +22,22 @@ export default function ChatHeader() {
       </Link>
 
       <div className=" w-full max-w-3xl flex flex-col items-center text-center">
-        <h1 className="font-bebas text-2xl sm:text-3xl font-bold mb-4 text-white">
-          Chat Oficial da FURIA
-        </h1>
+        <div className="flex items-center justify-center gap-2">
+          <h1 className="font-bebas text-2xl sm:text-3xl font-bold mb-4 text-white">
+            Chat Oficial da FURIA
+          </h1>
+          <Image
+            src="/Furia_Esports_logo.png"
+            alt="Logo da FURIA"
+            width={35}
+            height={30}
+            className="shadow-xl mb-5"
+          />
+        </div>
 
         <p className="font-inter mb-8 text-gray-400">
           Manda sua pergunta e troque ideia sobre a comunidade de CS da Furia.
+          #GoFURIA
         </p>
       </div>
     </motion.div>
