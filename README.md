@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+FURIA Chatbot 🐆🔥
 
-## Getting Started
+Bem-vindo ao FURIA Chatbot, um projeto desenvolvido pro Challenge #1 - Experiência Conversacional FURIA! Este é um chatbot interativo com uma homepage, posts do Twitter da FURIA, e localStorage pra salvar mensagens do chat. Feito com a energia do time de esports mais brabo do Brasil! 🚀
 
-First, run the development server:
+📖 Sobre o Projeto
 
-```bash
+O FURIA Chatbot é uma aplicação web que conecta os fãs da FURIA Esports com um bot conversacional. A homepage engaja com um design gamer (laranja, preto, branco), enquanto o chat usa localStorage pra persistir mensagens. Criado pro challenge, combina UX imersiva com tech moderna.
+
+## 🎮 Funcionalidades
+
+- **Chat com IA**: Bot conversacional com Gemini API pra respostas dinâmicas.
+
+- **Homepage Estilosa**: Logo animado, título em Bebas Neue, descrição com Inter.
+
+- **Feed do Twitter**: Últimos posts da @furia via react-tweet.
+
+- **Chat Interativo**: Bot conversacional com mensagens salvas no localStorage.
+
+- **Botão Animado**: CTA “Começar Chat” com framer-motion e animate-pulse.
+
+- **Footer Social**: Links pro Twitter e Instagram da FURIA.
+
+- **Responsividade**: Perfeito em mobile e desktop com Tailwind 4.
+
+- **Componentização**: Código modular (Logo, Title, Description, ChatButton, TwitterFeed, Footer, HighlightCarousel).
+
+## 📸 Screenshots
+
+# Homepage
+
+# Chat
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js, React, TypeScript
+
+- **Estilização**: Tailwind CSS 4.0
+
+- **Animações**: Framer Motion
+
+- **Ícones**: Lucide React
+
+- **Integração Social**: React Tweet
+
+- **Persistência**: localStorage
+
+## 🚀 Como Rodar Localmente
+
+- Clone o repositório:
+
+git clone https://github.com/seu-usuario/furia-chatbot.git
+cd furia-chatbot
+
+- Instale as dependências:
+
+npm install
+
+- Rode o projeto:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Abra http://localhost:3000 no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Demonstração do projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Link do projeto**:
 
-## Learn More
+## 🙌 Créditos
 
-To learn more about Next.js, take a look at the following resources:
+- **FURIA Esports**: Inspiração e branding 🐆
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Challenge #1**: Motivação pra criar algo épico
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Desenvolvedor**: João Pedro de Medeiros
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+VAMOOO FURIA! 🐆🔥
