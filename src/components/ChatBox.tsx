@@ -12,6 +12,19 @@ export default function ChatBox() {
   const [loading, setLoading] = useState(false)
   const chatEndRef = useRef<HTMLDivElement | null>(null)
 
+  useEffect(() => {
+    const savedMessages = localStorage.getItem("chat-messages")
+    if (savedMessages) {
+      setMessages(JSON.parse(savedMessages))
+    }
+  }, [])
+
+  useEffect(() => {
+    if (messages.length > 0) {
+      localStorage.setItem("chat-messages", JSON.stringify(messages))
+    }
+  }, [messages])
+
   const sendMessage = async () => {
     if (!input.trim()) return
 
