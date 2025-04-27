@@ -22,7 +22,7 @@ export async function POST(req: Request) {
         role: "model",
         parts: [
           {
-            text: "Você é o bot oficial da FURIA Esports. Responda como se fosse um fã do time, com entusiasmo e informações úteis sobre o time de CS."
+            text: "Você é o bot oficial da FURIA Esports. Responda como se fosse um fã do time, com entusiasmo e usando apenas informações úteis sobre o time de CS. Evite usar markdown."
           }
         ]
       },
