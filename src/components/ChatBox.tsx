@@ -100,7 +100,12 @@ export default function ChatBox() {
         <div ref={chatEndRef} />
       </div>
 
-      <div className="flex border-t border-gray-700 p-4">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.8, duration: 0.6 }}
+        className="flex border-t border-gray-700 p-4"
+      >
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -114,7 +119,7 @@ export default function ChatBox() {
         >
           <SendHorizonal className="w-5 h-5" />
         </button>
-      </div>
+      </motion.div>
     </div>
   )
 }
