@@ -1,5 +1,6 @@
 "use client"
 
+import { motion } from "framer-motion"
 import { SendHorizonal } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
@@ -36,53 +37,68 @@ export default function ChatBox() {
   }, [messages])
 
   return (
-    <div className="w-full max-w-md">
-      <div className=" text-white">
+    <div className="w-full max-w-2xl h-[75vh] flex flex-col bg-black/30 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden">
+      <div className="flex-1 p-6 overflow-y-auto space-y-4">
         {messages.map((msg, i) => (
-          <div
+          <motion.div
             key={i}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
             className={`flex ${
               msg.sender === "user" ? "justify-end" : "justify-start"
             }`}
           >
             <div
-              className={`flex items-end gap-2 max-w-[80%] ${
+              className={`flex items-end gap-2 max-w-[75%] ${
                 msg.sender === "user" ? "flex-row-reverse" : ""
               }`}
             >
-              <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs font-bold">
+              <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-sm font-bold">
                 {msg.sender === "user" ? "👤" : "🐆"}
               </div>
 
               <div
-                className={`rounded-2xl px-4 py-2 text-sm shadow-md ${
+                className={`rounded-2xl px-4 py-2 text-sm shadow ${
                   msg.sender === "user"
-                    ? "bg-fuchsia-100 text-fuchsia-800"
-                    : "bg-blue-100 text-blue-900"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-700 text-white"
                 }`}
               >
                 {msg.text}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
+
         {loading && (
-          <div className="text-gray-500 italic">FURIA está digitando...</div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "mirror",
+              duration: 0.8
+            }}
+            className="text-gray-400 italic"
+          >
+            FURIA está digitando...
+          </motion.div>
         )}
         <div ref={chatEndRef} />
       </div>
 
-      <div className="flex border rounded-lg overflow-hidden">
+      <div className="flex border-t border-gray-700 p-4">
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-          className="flex-1 p-3 text-black outline-none"
+          className="flex-1 p-3 bg-transparent text-white placeholder-gray-400 outline-none"
           placeholder="Pergunte algo sobre a FURIA..."
         />
         <button
           onClick={sendMessage}
-          className="text-white p-3 hover:bg-gray-900 bg-gray-800"
+          className="ml-2 bg-blue-600 hover:bg-blue-700 p-3 rounded-full text-white transition"
         >
           <SendHorizonal className="w-5 h-5" />
         </button>
