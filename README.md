@@ -1,10 +1,8 @@
-FURIA Chatbot 🐆🔥
+  # FURIA Chatbot 🐆🔥
 
-Bem-vindo ao FURIA Chatbot, um projeto desenvolvido pro Challenge #1 - Experiência Conversacional FURIA! Este é um chatbot interativo com uma homepage, posts do Twitter da FURIA, e localStorage pra salvar mensagens do chat. Feito com a energia do time de esports mais brabo do Brasil! 🚀
+- Bem-vindo ao FURIA Chatbot, um projeto desenvolvido pro Challenge #1 - Experiência Conversacional FURIA! Este é um chatbot interativo com uma homepage, posts do Twitter da FURIA, e localStorage pra salvar mensagens do chat. Feito com a energia do time de esports mais brabo do Brasil! 🚀
 
-📖 Sobre o Projeto
-
-O FURIA Chatbot é uma aplicação web que conecta os fãs da FURIA Esports com um bot conversacional. A homepage engaja com um design gamer (laranja, preto, branco), enquanto o chat usa localStorage pra persistir mensagens. Criado pro challenge, combina UX imersiva com tech moderna.
+- O FURIA Chatbot é uma aplicação web que conecta os fãs da FURIA Esports com um bot conversacional. A homepage engaja com um design gamer (laranja, preto, branco), enquanto o chat usa localStorage pra persistir mensagens. Criado pro challenge, combina UX imersiva com tech moderna.
 
 ## 🎮 Funcionalidades
 
@@ -22,18 +20,20 @@ O FURIA Chatbot é uma aplicação web que conecta os fãs da FURIA Esports com 
 
 - **Responsividade**: Perfeito em mobile e desktop com Tailwind 4.
 
-- **Componentização**: Código modular (Logo, Title, Description, ChatButton, TwitterFeed, Footer, HighlightCarousel).
+-  **Persistência**: Mensagens salvas no localStorage.
 
 ## 📸 Screenshots
 
-# Homepage
+### Homepage
 
-# Chat
+### Chat
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js, React, TypeScript
-
+- **Frontend**: Next.js 15, React 19, TypeScript
+  
+- **API**: Google Gemini
+  
 - **Estilização**: Tailwind CSS 4.0
 
 - **Animações**: Framer Motion
@@ -48,18 +48,19 @@ O FURIA Chatbot é uma aplicação web que conecta os fãs da FURIA Esports com 
 
 - Clone o repositório:
 
-git clone https://github.com/seu-usuario/furia-chatbot.git
-cd furia-chatbot
+   `git clone https://github.com/seu-usuario/furia-chatbot.git`
+ 
+   `cd furia-chatbot`
 
 - Instale as dependências:
 
-npm install
+  `npm install`
 
 - Rode o projeto:
 
-npm run dev
+  `npm run dev`
 
-- Abra http://localhost:3000 no navegador.
+- Abra `http://localhost:3000` no navegador.
 
 ## 🚀 Demonstração do projeto
 
