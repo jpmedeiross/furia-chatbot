@@ -66,7 +66,7 @@
 
 ## 🚀 Demonstração do projeto
 
-- **Link do projeto**:
+- **Link do projeto**: https://furia-chatbot-livid.vercel.app
 
 ## 🙌 Créditos
 
