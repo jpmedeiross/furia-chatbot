@@ -8,8 +8,6 @@
 
 - **Chat com IA**: Bot conversacional com Gemini API pra respostas dinâmicas.
 
-- **Homepage Estilosa**: Logo animado, título em Bebas Neue, descrição com Inter.
-
 - **Feed do Twitter**: Últimos posts da @furia via react-tweet.
 
 - **Chat Interativo**: Bot conversacional com mensagens salvas no localStorage.
@@ -24,9 +22,13 @@
 
 ## 📸 Screenshots
 
-### Homepage
+- ### Homepage
 
-### Chat
+  ![Home](./public/home.gif)
+
+- ### Chat
+
+![ChatBot](./public/chatBoxFuria.png)
 
 ## 🛠️ Tech Stack
 
